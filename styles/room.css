@@ -97,4 +97,57 @@
 }
 
 
-/*questions */ 
+/********* questions *********/ 
+
+.question-wrapper{
+    background-color: var(--light-blue);
+    margin-bottom: .8rem;
+    padding: 2.4rem;
+
+    border-radius: 0 .8rem .8rem .8rem;
+
+}
+
+.question-wrapper .question-content{
+    display: flex;
+    align-items: flex-start;
+
+
+}
+.question-wrapper .question-content .user{
+    background-color: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+.question-wrapper .actions{
+    display: flex;
+    justify-content: flex-end;   
+    align-items: center;
+}
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .question-content  p{
+    margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+}
+.question-wrapper .actions > a > img{
+    margin: .8rem;
+}
+.question-wrapper .actions a + a{
+    margin-left: 2.4rem;
+} 
+
+/***** Question read  *******/
+
+.question-wrapper.read{
+    background-color: var(--grey-medium);
+}
+.question-wrapper.read .question-content .user{
+    background-color: var(--grey-blue);
+}
